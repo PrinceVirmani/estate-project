@@ -7,7 +7,6 @@ import SignIn from "./pages/SignIn";
 import Header from "./componets/Header";
 import SignUp from "./pages/SignUp";
 import PrivateRoute from "./componets/PrivateRoute";
-import Createlisting from "./pages/CreateListing";
 import CreateListing from "./pages/CreateListing";
 
 export default function App() {

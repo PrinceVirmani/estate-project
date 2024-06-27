@@ -21,7 +21,7 @@ import {
   updateUserFailure,
 } from "../redux/user/userSlice";
 import { useDispatch } from "react-redux";
-import { json } from "express";
+
 import { Link } from "react-router-dom";
 
 export default function Profile() {
@@ -79,7 +79,7 @@ export default function Profile() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: json.stringify(formData),
+        body: JSON.stringify(formData),
       });
       const data = await res.json();
       if (data.success === false) {
